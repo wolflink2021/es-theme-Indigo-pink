@@ -1,6 +1,8 @@
-## Indigo-Pink Emuelec for OGA Theme
+## Indigo-Pink Emuelec Theme
 
-This is a modern dark Emuelec for OGA theme based on original ideas by Chicuelo and brought to life in collaboration with Nick L (c64-dev).
+This is a modification based on the "es-theme-epicnoir" theme. The original authors are Nico La Rosa (Chicuelo) & Nick L (c64-dev).
+
+Originally modified by AreX, it is currently maintained by Wolflink.
 
 ---
 
