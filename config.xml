@@ -1,0 +1,9 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<include>./_lang/zh_CN.xml</include>
+	<include subset="vdelay" name="1" displayName="${delay1}">./_options/videodelay/video_delay_1.xml</include>
+	<include subset="vdelay" name="2" displayName="${delay2}">./_options/videodelay/video_delay_2.xml</include>
+	<include subset="vdelay" name="3" displayName="${delay3}">./_options/videodelay/video_delay_3.xml</include>
+	<include subset="vdelay" name="0" displayName="${delay0}">./_options/videodelay/video_delay_0.xml</include>
+	<include subset="vdelay" name="nv" displayName="${novideo}">./_options/videodelay/no_video.xml</include>
+</theme>

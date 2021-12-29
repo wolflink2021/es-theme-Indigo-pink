@@ -1,0 +1,33 @@
+<theme>
+<formatVersion>4</formatVersion>
+<include>./../theme.xml</include>
+
+<view name="basic, detailed, video, grid">
+  <text name="nameLabel" extra="true">
+    <text>Super Nintendo</text>
+  </text>
+</view>    
+
+<view name="system">
+  <text name="sys_line1" extra="true">
+    <text>Super Nintendo</text>
+    <fontSize>0.048</fontSize>
+    <origin>0 0</origin>
+   <pos>0.05 0.13</pos>
+    <size>0 0</size>
+  </text>
+  <text name="sys_line2" extra="true">
+    <text>MSU1</text>
+     <fontSize>0.16</fontSize>
+    <origin>0 0</origin>
+    <pos>0.05 0.15</pos>
+    <size>0 0</size>
+</text>
+  <text name="shortdescription" extra="true">
+   <text>1990  ·  16-bit Console</text>
+  </text>
+  <text name="longdescription" extra="true">
+   <text>MSU1 (Media Streaming Unit 1) is an enhancement for the SNES, adding support for full-motion video and CD-quality audio.</text>
+  </text>
+ </view>
+</theme>

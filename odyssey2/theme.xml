@@ -1,0 +1,33 @@
+<theme>
+<formatVersion>4</formatVersion>
+<include>./../theme.xml</include>
+
+<view name="basic, detailed, video, grid">
+  <text name="nameLabel" extra="true">
+    <text>Odyssey2</text>
+  </text>
+</view>    
+
+<view name="system">
+  <text name="sys_line1" extra="true">
+    <text>Videopac</text>
+    <fontSize>0.048</fontSize>
+    <origin>0 0</origin>
+   <pos>0.05 0.13</pos>
+    <size>0 0</size>
+  </text>
+  <text name="sys_line2" extra="true">
+    <text>Odyssey2</text>
+     <fontSize>0.16</fontSize>
+    <origin>0 0</origin>
+    <pos>0.05 0.15</pos>
+    <size>0 0</size>
+</text>
+  <text name="shortdescription" extra="true">
+   <text>1980  ·  Console</text>
+  </text>
+  <text name="longdescription" extra="true">
+   <text>The Videopac is a video game console designed by Magnavox, manufactured by Philips and marketed in the late 1970s and early 1980s under the brands Philips.</text>
+  </text>
+ </view>
+</theme>

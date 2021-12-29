@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>4</formatVersion>
+	
+	<variables>
+		<langue>zh_CN</langue>
+
+    <delay1>1 秒</delay1>
+    <delay2>2 秒</delay2>
+    <delay3>3 秒</delay3>
+    <delay0>无延迟</delay0>
+    <novideo>关闭视频</novideo>
+    <subset.vdelay>游戏列表预览视频延迟</subset.vdelay>
+	</variables>
+</theme>

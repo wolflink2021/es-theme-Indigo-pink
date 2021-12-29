@@ -1,0 +1,353 @@
+<!--
+Theme name:  Indigo Pink OGA
+Artwork by:  AreX
+Coding by:   AreX
+Fonts used:  Acre Medium & Bebas Neue Bold
+license: creative commons CC-BY-NC-SA
+originally based on: "es-theme-epicnoir-oga" by Nico La Rosa (Chicuelo) & WolfLink & Nick L (c64-dev)
+
+# Thanks and Credits
+Some controllers and graphics used in this theme are created by great artists who kindly agreed to include their art within the theme.
+-->
+
+<theme defaultView="detailed">
+    <formatVersion>4</formatVersion>
+    <include>./config.xml</include>
+
+    <variables>
+        <groupColor>484F72</groupColor>
+        <groupSeparatorColor>484F72</groupSeparatorColor>
+        <subTextColor>68719E</subTextColor>
+        <hintTextColor>4E5577</hintTextColor>
+    </variables>
+
+    <view name="screen">
+        <text name="clock">
+            <color>777777FF</color>
+            <fontSize>0.035</fontSize>
+            <pos>0.90 0.94</pos>
+            <size>0.09 0.058</size>
+            <alignment>right</alignment>
+            <verticalAlignment>center</verticalAlignment>
+            <fontPath>./_art/Acre.otf</fontPath>
+        </text>
+        <controllerActivity name="controllerActivity">
+            <pos>1 1</pos>
+            <size>0.0001 0.0001</size>
+            <itemSpacing>0.003</itemSpacing>
+            <imagePath>./art/gamepad.svg</imagePath>
+            <color>FFFFFF80</color>
+            <activityColor>A0A0FFC0</activityColor>
+            <hotkeyColor>FFA0A0C0</hotkeyColor>
+        </controllerActivity>
+        <batteryIndicator name="batteryIndicator">
+            <pos>0.955 0.003</pos>
+            <size>0.033 0.033</size>
+            <incharge>./art/battery/incharge.svg</incharge>
+            <full>./art/battery/full.svg</full>
+            <at75>./art/battery/75.svg</at75>
+            <at50>./art/battery/50.svg</at50>
+            <at25>./art/battery/25.svg</at25>
+            <empty>./art/battery/empty.svg</empty>
+            <color>777777</color>
+            <fontPath>./_art/Acre.otf</fontPath>
+        </batteryIndicator>
+        <batteryIndicator name="batteryIndicator" tinyScreen="true">
+            <pos>0.918 0.003</pos>
+            <size>0.07 0.07</size>
+        </batteryIndicator>
+    </view>
+
+    <view name="system">
+        <image name="background" extra="true">
+            <path>./_art/background.png</path>
+            <tile>false</tile>
+            <size>1 1</size>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+        </image>
+
+        <!-- <image name="poster" extra="true">
+        <path>./_art/posters/${system.theme}.jpg</path>
+        <tile>false</tile>
+        <origin>1 0</origin>
+        <pos>1 0</pos>
+        <size>0 1</size>
+    </image> -->
+
+        <image name="indicator_bg" extra="false">
+            <tile>false</tile>
+            <path>./_art/indicators/left-ray.svg</path>
+            <size>0.1 1</size>
+            <pos>0 0</pos>
+        </image>
+
+        <image name="indicator" extra="false">
+            <path>./_art/indicators/${system.theme}.png</path>
+            <tile>false</tile>
+            <color>F8F8F8</color>
+            <origin>0 0</origin>
+            <pos>-0.002 0.15</pos>
+            <size>0.1 0.70</size>
+        </image>
+
+        <carousel name="systemcarousel">
+            <type>horizontal</type>
+            <color>00000000</color>
+            <origin>1 1</origin>
+            <pos>0 0</pos>
+            <size>0.01 0.01</size>
+            <logoScale>1</logoScale>
+            <logoSize>0.01 0.01</logoSize>
+            <maxLogoCount>0</maxLogoCount>
+        </carousel>
+
+        <text name="sys_line1" extra="true">
+            <fontPath>./_art/BebasNeue.otf</fontPath>
+            <alignment>left</alignment>
+            <forceUppercase>1</forceUppercase>
+            <color>FFFFFF</color>
+        </text>
+
+        <text name="sys_line2" extra="true">
+            <fontPath>./_art/BebasNeue.otf</fontPath>
+            <alignment>left</alignment>
+            <forceUppercase>1</forceUppercase>
+            <color>FFFFFF</color>
+        </text>
+
+        <text name="shortdescription" extra="true">
+            <fontPath>./_art/Acre.otf</fontPath>
+            <alignment>left</alignment>
+            <forceUppercase>0</forceUppercase>
+            <fontSize>0.030</fontSize>
+            <!-- <color>9b9a9a</color> -->
+            <color>${subTextColor}</color>
+            <origin>0 0</origin>
+            <pos>0.05 0.07</pos>
+            <size>0.5 0.033</size>
+        </text>
+
+        <text name="systemInfo">
+            <fontPath>./_art/Acre.otf</fontPath>
+            <alignment>left</alignment>
+            <backgroundColor>00000000</backgroundColor>
+            <forceUppercase>1</forceUppercase>
+            <color>FF2056</color>
+            <origin>0 0</origin>
+            <pos>0.25 0.602</pos>
+            <size>0.200 0.039</size>
+            <fontSize>0.04</fontSize>
+        </text>
+
+        <text name="longdescription" extra="true">
+            <fontPath>./_art/Acre.otf</fontPath>
+            <alignment>left</alignment>
+            <forceUppercase>0</forceUppercase>
+            <fontSize>0.0285</fontSize>
+            <color>8F8F8F</color>
+            <lineSpacing>1.16</lineSpacing>
+            <origin>0 0</origin>
+            <pos>0.05 0.355</pos>
+            <size>0.44 0.20</size>
+        </text>
+
+        <image name="buttonA" extra="true">
+            <path>./_art/var/button.svg</path>
+            <tile>false</tile>
+            <origin>0 0</origin>
+            <pos>0.05 0.58</pos>
+            <size>0 0.08</size>
+        </image>
+
+        <helpsystem name="help">
+            <fontPath>./_art/Acre.otf</fontPath>
+            <fontSize>0.02</fontSize>
+            <origin>1 1</origin>            <!--0 0-->
+            <pos>0 0</pos>            <!--0.0890 0.6283-->
+            <textColor>${hintTextColor}</textColor>
+            <iconColor>${hintTextColor}</iconColor>
+        </helpsystem>
+
+        <image name="controller" extra="true">
+            <path>./_art/controllers/${system.theme}.png</path>
+            <tile>false</tile>
+            <origin>0 0</origin>
+            <pos>0.48 0.35</pos>
+            <maxSize>0.55 0.55</maxSize>
+        </image>
+    </view>
+
+    <view name="basic, detailed, video">
+
+        <image name="background" extra="true">
+            <tile>false</tile>
+            <path>./_art/ingame-global-bg.png</path>
+            <size>1 1</size>
+            <pos>0 0</pos>
+        </image>
+
+        <textlist name="gamelist">
+            <selectorColor>391739</selectorColor>
+            <selectedColor>F8F8F8</selectedColor>
+            <selectorHeight>0.038</selectorHeight>
+            <selectorOffsetY>0.008</selectorOffsetY>
+            <primaryColor>585858</primaryColor>
+            <secondaryColor>888888</secondaryColor>
+            <fontPath>./_art/Acre.otf</fontPath>
+            <alignment>left</alignment>
+            <pos>0.006 0.006</pos>
+            <size>0.436 0.936</size>
+            <fontSize>0.036</fontSize>
+            <lineSpacing>1.25</lineSpacing>
+            <horizontalMargin>0.01</horizontalMargin>
+        </textlist>
+
+        <!-- <text name="top_label" extra="true">
+            <fontPath>./_art/Acre.otf</fontPath>
+            <text>Select Game</text>
+            <alignment>left</alignment>
+            <color>777777</color>
+            <fontSize>0.034</fontSize>
+            <origin>0 0</origin>
+            <pos>0.012 0.005</pos>
+            <size>0.20 0.08</size>
+        </text> -->
+
+        <text name="nameLabel" extra="true">
+            <fontPath>./_art/Acre.otf</fontPath>
+            <alignment>left</alignment>
+            <forceUppercase>1</forceUppercase>
+            <color>ffffff</color>
+            <fontSize>0.036</fontSize>
+            <origin>0 0</origin>
+            <pos>0.495 0.001</pos>
+            <size>0.40 0.075</size>
+        </text>
+
+        <text name="md_description">
+            <fontPath>./_art/Acre.otf</fontPath>
+            <!-- <color>818181</color> -->
+            <color>4E5577</color>
+            <fontSize>0.03</fontSize>
+            <alignment>left</alignment>
+            <forceUppercase>0</forceUppercase>
+            <lineSpacing>1</lineSpacing>
+            <pos>0.47 0.720</pos>
+            <size>0.5 0.192</size>
+        </text>
+
+        <!-- Place metadata -->
+
+        <rating name="md_rating" extra="true">
+            <pos>0.82 0.66</pos>
+            <size>0 0.045</size>
+            <filledPath>./_art/var/star_filled.svg</filledPath>
+            <unfilledPath>./_art/var/star_hollow.svg</unfilledPath>
+            <color>8E94B1</color>
+        </rating>
+
+
+        <!-- Extra Text Labels. Edit text values if needed.-->
+
+        <text name="txt_descript" extra="true">
+            <text>Description</text>
+            <fontPath>./_art/Acre.otf</fontPath>
+            <alignment>left</alignment>
+            <forceUppercase>1</forceUppercase>
+            <fontSize>0.025</fontSize>
+            <color>${subTextColor}</color>
+            <origin>0 0</origin>
+            <pos>0.47 0.43</pos>
+            <size>0.5 0.5</size>
+        </text>
+
+        <!-- Hidden Elements -->
+        <text name="shortdescription, longdescription" extra="true">
+            <origin>1 1</origin>
+            <pos>0 0</pos>
+            <color>00000000</color>
+
+        </text>
+
+        <helpsystem name="help">
+            <origin>0 1</origin>
+            <pos>0.01 0.988</pos>
+            <fontSize>0.035</fontSize>
+            <textColor>${hintTextColor}</textColor>
+            <iconColor>${hintTextColor}</iconColor>
+        </helpsystem>
+    </view>
+
+    <view name="basic, detailed, grid">
+        <image name="md_image">
+            <tile>false</tile>
+            <origin>0.5 0.5</origin>
+            <pos>0.72 0.37</pos>
+            <maxSize>0.42 0.42</maxSize>
+        </image>
+
+        <video name="md_video">
+            <origin>0.5 0.5</origin>
+            <pos>0.72 0.37</pos>
+            <maxSize>0.5 0.5</maxSize>
+            <delay>${delay}</delay>
+            <showSnapshotNoVideo>false</showSnapshotNoVideo>
+            <showSnapshotDelay>false</showSnapshotDelay>
+            <roundCorners>0.02</roundCorners>
+        </video>
+    </view>
+
+    <view name="menu">
+        <menuText name="menutitle">
+            <fontSize>0.044</fontSize>
+            <color>FAFAFA</color>
+        </menuText>
+        <menuText name="menufooter">
+            <fontSize>0.04</fontSize>
+            <color>${groupColor}</color>
+        </menuText>
+        <menuText name="menutext">
+            <fontSize>0.0375</fontSize>
+            <color>969696</color>
+            <separatorColor>323232FF</separatorColor>
+            <selectorColor>B02657CC</selectorColor>
+            <selectorColorEnd>00000000</selectorColorEnd>
+            <selectedColor>FFFFFF</selectedColor>
+            <selectorGradientType>horizontal</selectorGradientType>
+        </menuText>
+        <menuTextSmall name="menutextsmall">
+            <fontSize>0.026</fontSize>
+            <color>${groupColor}</color>
+        </menuTextSmall>
+        <menuGroup name="menugroup">
+            <fontSize>0.026</fontSize>
+            <color>${subTextColor}</color>
+            <separatorColor>${subTextColor}</separatorColor>
+            <backgroundColor>00000000</backgroundColor>
+            <lineSpacing>2.5</lineSpacing>
+        </menuGroup>
+        <menuBackground name="menubg">
+            <color>151B30</color>
+            <cornerSize>20 20</cornerSize>
+        </menuBackground>
+        <menuIcons name="menuicons">
+            <iconKodi>./_art/icons/Kodi.png</iconKodi>
+            <iconSystem>./_art/icons/System.png</iconSystem>
+            <iconUpdates>./_art/icons/Updates.png</iconUpdates>
+            <iconGames>./_art/icons/Games.png</iconGames>
+            <iconControllers>./_art/icons/Controllers.png</iconControllers>
+            <iconUI>./_art/icons/UI.png</iconUI>
+            <iconSound>./_art/icons/Sound.png</iconSound>
+            <iconNetwork>./_art/icons/Network.png</iconNetwork>
+            <iconScraper>./_art/icons/Scraper.png</iconScraper>
+            <iconAdvanced>./_art/icons/Advanced.png</iconAdvanced>
+            <iconQuit>./_art/icons/Quit.png</iconQuit>
+            <iconRestart>./_art/icons/Restart.png</iconRestart>
+            <iconShutdown>./_art/icons/Shutdown.png</iconShutdown>
+            <iconFastShutdown>./_art/icons/Fastshutdown.png</iconFastShutdown>
+            <iconRetroachievements>./_art/icons/Contest.png</iconRetroachievements>
+            <iconEmuelec>./_art/icons/Emuelec.png</iconEmuelec>
+        </menuIcons>
+    </view>
+</theme>
