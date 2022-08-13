@@ -22,3 +22,4 @@ REQUIREMENTS:
 
 PROHIBITED:
 - Commercial distribution
+# Adjust the gamelist
