@@ -190,16 +190,14 @@ Some controllers and graphics used in this theme are created by great artists wh
         <textlist name="gamelist">
             <selectorColor>391739</selectorColor>
             <selectedColor>F8F8F8</selectedColor>
-            <selectorHeight>0.038</selectorHeight>
-            <selectorOffsetY>0.008</selectorOffsetY>
             <primaryColor>585858</primaryColor>
             <secondaryColor>888888</secondaryColor>
             <fontPath>./_art/Acre.otf</fontPath>
             <alignment>left</alignment>
-            <pos>0.006 0.006</pos>
-            <size>0.436 0.936</size>
-            <fontSize>0.036</fontSize>
-            <lineSpacing>1.25</lineSpacing>
+            <pos>0.006 0.007</pos>
+            <size>0.436 0.918</size>
+            <fontSize>0.038</fontSize>
+            <lineSpacing>1.44</lineSpacing>
             <horizontalMargin>0.01</horizontalMargin>
         </textlist>
 
